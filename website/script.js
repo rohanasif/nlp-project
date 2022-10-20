@@ -1,5 +1,5 @@
 const baseURL = "https://api.meaningcloud.com/sentiment-2.1";
-const key = "a6cfb6bfd8bc63b829e4dbcfdb92ee2e";
+const key = "Your_api_key";
 
 const submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click", (e) => {
