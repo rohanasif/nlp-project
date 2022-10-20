@@ -41,8 +41,8 @@ app.post("/add", (req, res) => {
 })
 
 // Setup Server
-app.listen(8080, () => {
-    console.log("Listening on port 8080")
-    console.log("Go to http://localhost:8080")
+app.listen(8081, () => {
+    console.log("Listening on port 8081")
+    console.log("Go to http://localhost:8081")
 })
 
