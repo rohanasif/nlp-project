@@ -5,6 +5,10 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 
 module.exports = {
     entry: './src/client/js/index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name][contenthash].js'
+    },
     mode: 'production',
     module: {
         rules: [
