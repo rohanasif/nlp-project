@@ -1,4 +1,12 @@
 // Setup empty JS object to act as endpoint for all routes
+const dotenv = require('dotenv');
+dotenv.config();
+function MeaningCloud(obj) {
+    return obj;
+}
+var textapi = new MeaningCloud({
+    application_key: process.env.API_KEY
+});
 projectData = {};
 
 // Require Express to run server and routes
@@ -18,6 +26,10 @@ app.use(bodyParser.json());
 app.use(cors())
 // Initialize the main project folder
 app.use(express.static('client'));
+
+app.get('/', function (req, res) {
+    res.sendFile('dist/index.html')
+})
 
 app.get("/all", function sendData(req, res) {
     res.send(projectData);
