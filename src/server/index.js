@@ -28,7 +28,7 @@ app.use(cors())
 app.use(express.static('client'));
 
 app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
+    res.sendFile('index.html', { root: '../../dist' })
 })
 
 app.get("/all", function sendData(req, res) {
