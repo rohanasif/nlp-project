@@ -1,7 +1,7 @@
 import "../styles/styles.scss"
-import receiveData from "./receiveData";
-import getData from "./getData";
-import postData from "./postData";
+import receiveData from "./js/receiveData"
+import getData from "./js/getData"
+import postData from "./js/postData"
 
 const baseURL = "https://api.meaningcloud.com/sentiment-2.1";
 const key = `${process.env.API_KEY}`;
