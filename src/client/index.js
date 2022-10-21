@@ -1,4 +1,4 @@
-import "../styles/styles.scss"
+import "./styles/styles.scss"
 import receiveData from "./js/receiveData"
 import getData from "./js/getData"
 import postData from "./js/postData"
