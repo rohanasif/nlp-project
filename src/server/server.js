@@ -29,6 +29,7 @@ app.use(express.static('client'));
 
 app.get('/', function (req, res) {
     res.sendFile('index.html', { root: '../sample-project/src/client/views' })
+    // res.sendFile('index.html', { root: '../../dist' })
 })
 
 app.get("/all", function sendData(req, res) {
