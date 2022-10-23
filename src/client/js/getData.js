@@ -9,4 +9,4 @@ const getData = async (baseURL, url, key) => {
     }
 }
 
-export default getData
+export default { getData, baseURL, url, key }

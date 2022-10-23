@@ -1,4 +1,4 @@
-import postData from "../client/js/postData"
+import { postData, url, data } from "../client/js/postData"
 
 test("Post the data fetched to the url passed to the postData function", () => {
     expect(postData(url, {

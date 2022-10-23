@@ -42,4 +42,4 @@ submitBtn.addEventListener("click", (e) => {
     }
 })
 
-export default isValid
+export default { isValid, receiveData, getData, postData }

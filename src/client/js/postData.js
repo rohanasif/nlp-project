@@ -20,4 +20,4 @@ const postData = async (url = "", data = {}) => {
     }
 };
 
-export default postData
+export default { postData, url, data }
