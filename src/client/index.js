@@ -3,6 +3,9 @@ import receiveData from "./js/receiveData"
 import getData from "./js/getData"
 import postData from "./js/postData"
 
+import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+dotenv.config()
+
 const baseURL = "https://api.meaningcloud.com/sentiment-2.1";
 const key = `${process.env.API_KEY}`;
 
