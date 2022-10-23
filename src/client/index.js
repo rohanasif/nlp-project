@@ -41,3 +41,5 @@ submitBtn.addEventListener("click", (e) => {
         alert("Invalid url!")
     }
 })
+
+export default isValid
