@@ -28,7 +28,7 @@ app.use(cors())
 app.use(express.static('client'));
 
 app.get('/', function (req, res) {
-    res.sendFile('index.html', { root: '../sample-project/src/client/views' })
+    res.sendFile('index.html', { root: '../nlp-project/src/client/views' })
     // res.sendFile('index.html', { root: '../../dist' })
 })
 
